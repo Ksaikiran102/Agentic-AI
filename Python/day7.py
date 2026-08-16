@@ -1,41 +1,43 @@
-# Day 5 Practice - String Operations
+# Day 7 Practice - Sets & Dictionaries
 
-text = input("Enter a sentence: ")
+# Set Practice
+languages = {"Python", "Java", "Python", "C++"}
 
-print("\nOriginal Text:", text)
+print("Languages:", languages)
 
-# Basic String Methods
-print("Uppercase:", text.upper())
-print("Lowercase:", text.lower())
-print("Title Case:", text.title())
-print("Length:", len(text))
+languages.add("JavaScript")
+languages.update(["Go", "Rust"])
 
-# Indexing & Slicing
-print("\nFirst Character:", text[0])
-print("Last Character:", text[-1])
-print("First 5 Characters:", text[:5])
+print("\nUpdated Set:", languages)
 
-# Searching
-print("\nIndex of 'a':", text.find("a"))
-print("Number of 'a':", text.count("a"))
+backend = {"Python", "Go", "Java"}
 
-# Replace
-new_text = text.replace("Python", "Agentic AI")
-print("\nAfter Replace:", new_text)
+print("\nCommon Languages:", languages.intersection(backend))
+print("All Languages:", languages.union(backend))
 
-# Split & Join
-words = text.split()
-print("\nWords:", words)
+# Dictionary Practice
+student = {
+    "name": "Sai Kiran",
+    "age": 23,
+    "course": "Agentic AI"
+}
 
-joined = "-".join(words)
-print("Joined with '-':", joined)
+print("\nStudent Details")
+print("Name:", student["name"])
+print("Course:", student.get("course"))
 
-# Checking
-print("\nStarts with 'P':", text.startswith("P"))
-print("Ends with '.':", text.endswith("."))
-print("Contains 'AI'?", "AI" in text)
+student["age"] = 24
+student["city"] = "Hyderabad"
 
-# Removing Spaces
-print("\nWithout extra spaces:", text.strip())
+print("\nUpdated Dictionary:")
+print(student)
 
-print("\nDay 5 Practice Completed!")
+print("\nKeys:", student.keys())
+print("Values:", student.values())
+
+student.pop("city")
+
+print("\nAfter Removing City:")
+print(student)
+
+print("\nDay 7 Practice Completed!")
