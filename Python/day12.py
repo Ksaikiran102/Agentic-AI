@@ -11,8 +11,9 @@ if sales >= 0:
 else:
     print("Worst Seller")
 
-#Usecase : ATM Withdrawl Scenario
-#check whether card is valid or not
+'''Usecase : ATM Withdrawl Scenario
+check whether card is valid or not
+'''
 
 card_details = {'valid_card':True,
                 'PIN':9090,
