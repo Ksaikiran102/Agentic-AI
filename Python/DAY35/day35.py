@@ -2,7 +2,6 @@
 
 #to have abstraction --> ABC class
 #Managemetn system using OOP --> Assignment
-
 #Method Overriding --> This happens when the child and the parent class possess the same method name but we want to have different behaviours.
 
 #Hotstar scenario --> Free User (can watch limited content with advertisement)
