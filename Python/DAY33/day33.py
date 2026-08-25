@@ -1,6 +1,6 @@
 # Day 33 --> inheritence , super() method
 
-'''
+
 syntax:
 
 class Parent:
